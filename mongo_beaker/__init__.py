@@ -91,7 +91,7 @@ class MongoNamespaceManager(NamespaceManager):
         self.db.drop_collection(self.db_collection)
 
     def keys(self):
-        log.debug("Removing %s" % self.db_collection)
+        log.debug("Retrieving keys from  %s" % self.db_collection)
         return [item["_id"].replace(self.namespace + "_", "") for item in self.db[self.db_collection].find()]
 
 class MongoManagerContainer(Container):
