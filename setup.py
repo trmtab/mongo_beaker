@@ -9,7 +9,7 @@ except ImportError:
 
 setup(
     name='mongo_beaker',
-    version='0.2.2',
+    version='0.2.3',
     description='Beaker backend to write sessions and caches to a MongoDB database.',
     long_description='\n',
     author='Chris Conlin',
