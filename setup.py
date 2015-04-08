@@ -37,7 +37,7 @@ setup(
     mongo = mongo_beaker:MongoNamespaceManager
     """,
     install_requires = [
-        'pymongo>=2.4.1',
+        'pymongo==2.7.2',
         'beaker>=1.4'
     ]
 )
