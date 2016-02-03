@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 
-try:
-    from setuptools import setup, find_packages
-except ImportError:
-    import ez_setup
-    ez_setup.use_setuptools()
-    from setuptools import setup, find_packages
+from setuptools import setup, find_packages
+
 
 setup(
     name='mongo_beaker',
@@ -37,7 +33,7 @@ setup(
     mongo = mongo_beaker:MongoNamespaceManager
     """,
     install_requires = [
-        'pymongo==2.7.2',
+        'pymongo>=2.7.2',
         'beaker>=1.4'
     ]
 )
