@@ -64,8 +64,7 @@ class MongoNamespaceManager(NamespaceManager):
 
     def __getitem__(self, key):
         log.debug("Getting %s" % key)
-        return pickle.loads(str(self.db[self.db_collection].find_one({ "_id": self._format_key(key) },
-            fields=["data"])["data"]))
+        return pickle.loads(str(self.db[self.db_collection].find_one({ "_id": self._format_key(key) })["data"]))
 
     def __contains__(self, key):
         log.debug("Contains %s" % key)
