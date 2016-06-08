@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='mongo_beaker',
-    version='0.2.5',
+    version='0.2.6',
     description='Beaker backend to write sessions and caches to a MongoDB database.',
     long_description='\n',
     author='Chris Conlin',
